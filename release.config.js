@@ -1,5 +1,5 @@
 module.exports = {
-    branches: ['master'],
+    branches: ['staging'],
     tagFormat: 'v${version}',
     repositoryUrl: 'https://github.com/alexs-mparticle/mparticle-web-sdk',
     plugins: [
