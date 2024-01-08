@@ -1,7 +1,7 @@
 module.exports = {
     branches: ['master'],
     tagFormat: 'v${version}',
-    repositoryUrl: 'https://github.com/mParticle/mparticle-web-sdk',
+    repositoryUrl: 'https://github.com/alexs-mparticle/mparticle-web-sdk',
     plugins: [
         [
             '@semantic-release/commit-analyzer',
@@ -40,25 +40,25 @@ module.exports = {
                 prepareCmd: 'sh ./scripts/release.sh',
             },
         ],
-        [
-            '@semantic-release/github',
-            {
-                assets: [
-                    'dist/mparticle.common.js',
-                    'dist/mparticle.esm.js',
-                    'dist/mparticle.js',
-                    'snippet.js',
-                    'snippet.min.js',
-                ],
-            },
-        ],
-        [
-            '@semantic-release/git',
-            {
-                assets: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
-                message:
-                    'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
-            },
-        ],
+        //     [
+        //         '@semantic-release/github',
+        //         {
+        //             assets: [
+        //                 'dist/mparticle.common.js',
+        //                 'dist/mparticle.esm.js',
+        //                 'dist/mparticle.js',
+        //                 'snippet.js',
+        //                 'snippet.min.js',
+        //             ],
+        //         },
+        //     ],
+        //     [
+        //         '@semantic-release/git',
+        //         {
+        //             assets: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+        //             message:
+        //                 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+        //         },
+        //     ],
     ],
 };
